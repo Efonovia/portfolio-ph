@@ -206,7 +206,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				/* font-family: 'Font Awesome 5 Free'; */
 				font-weight: 900;
 			}
 
@@ -217,7 +217,7 @@ input, select, textarea {
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '\f105';
+				/* content: '\f105'; */
 				display: inline-block;
 				font-size: 1.25em;
 				height: 2em;
@@ -3164,13 +3164,13 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
-		#header.alt {
-			background-color: transparent;
+		#header.top-nav {
+			background-color: white;
 		}
 
-			#header.alt h1 {
+			#header.top-nav h1 {
 				opacity: 0;
-				visibility: hidden;
+				/* color: #2d3a69; */
 			}
 
 		@media screen and (max-width: 736px) {
@@ -4030,11 +4030,11 @@ input, select, textarea {
 		}
 
 		#footer .inner form {
-			margin: 0 3em 0 0;
 			width: calc(50% - 1.5em);
 		}
-
+		
 		#footer .inner .contact {
+			margin: auto;
 			width: calc(50% - 1.5em);
 		}
 
@@ -4158,4 +4158,21 @@ input, select, textarea {
 .name-span {
 	font-weight: 900;
 	color:#4c5c96;
+	text-shadow: 1px 1px #fff;
+}
+
+#header>h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+}  
+
+.nav-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 5px;
+	cursor: pointer;
 }
